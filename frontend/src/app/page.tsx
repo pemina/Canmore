@@ -3,52 +3,85 @@ import { Phone, Mail, FileText, TrendingUp, Shield, Calculator, Presentation } f
 import { HeroSection } from "@/components/ui/hero-section-2";
 import { Cta4 } from "@/components/ui/cta-4";
 import { HoverFooter } from "@/components/ui/hover-footer-demo";
+import { Schema } from "@/components/seo/schema";
+import Image from "next/image";
 
-const features = [
-    {
-        Icon: FileText,
+const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "AccountingService",
+    "name": "CanMore Accounting",
+    "image": "https://canmoreaccounting.com/canmore-logo.jpg",
+    "@id": "https://canmoreaccounting.com",
+    "url": "https://canmoreaccounting.com",
+    "telephone": "+1-416-477-0644",
+    "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "310 - 1585 Markham Road",
+        "addressLocality": "Scarborough",
+        "addressRegion": "ON",
+        "postalCode": "M1B 2W1",
+        "addressCountry": "CA"
+    },
+    "openingHoursSpecification": [
+        {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday"
+            ],
+            "opens": "09:30",
+            "closes": "16:30"
+        }
+    ],
+    "sameAs": []
+};
+{
+    Icon: FileText,
         name: "Bookkeeping",
-        description: "Accurate and timely bookkeeping to keep your finances organized.",
-        href: "/services/bookkeeping",
-        cta: "Learn more",
-        background: <img className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&q=80&w=800" alt="Bookkeeping" />,
-        className: "lg:row-start-1 lg:row-end-4 lg:col-start-2 lg:col-end-3",
+            description: "Accurate and timely bookkeeping to keep your finances organized.",
+                href: "/services/bookkeeping",
+                    cta: "Learn more",
+                        background: <Image className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&q=80&w=800" alt="Bookkeeping" width={800} height={600} />,
+                            className: "lg:row-start-1 lg:row-end-4 lg:col-start-2 lg:col-end-3",
     },
-    {
-        Icon: Calculator,
+{
+    Icon: Calculator,
         name: "Tax Preparation",
-        description: "Expert tax preparation services ensuring compliance and maximizing returns.",
-        href: "/services/tax-preparation",
-        cta: "Learn more",
-        background: <img className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://images.unsplash.com/photo-1586486855514-8c633cc6fd38?auto=format&fit=crop&q=80&w=800" alt="Tax Prep" />,
-        className: "lg:col-start-1 lg:col-end-2 lg:row-start-1 lg:row-end-3",
+            description: "Expert tax preparation services ensuring compliance and maximizing returns.",
+                href: "/services/tax-preparation",
+                    cta: "Learn more",
+                        background: <Image className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://images.unsplash.com/photo-1586486855514-8c633cc6fd38?auto=format&fit=crop&q=80&w=800" alt="Tax Prep" width={800} height={600} />,
+                            className: "lg:col-start-1 lg:col-end-2 lg:row-start-1 lg:row-end-3",
     },
-    {
-        Icon: TrendingUp,
+{
+    Icon: TrendingUp,
         name: "Payroll",
-        description: "Seamless payroll management so you can focus on growing your business.",
-        href: "/services/payroll",
-        cta: "Learn more",
-        background: <img className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=800" alt="Payroll" />,
-        className: "lg:col-start-1 lg:col-end-2 lg:row-start-3 lg:row-end-4",
+            description: "Seamless payroll management so you can focus on growing your business.",
+                href: "/services/payroll",
+                    cta: "Learn more",
+                        background: <Image className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=800" alt="Payroll" width={800} height={600} />,
+                            className: "lg:col-start-1 lg:col-end-2 lg:row-start-3 lg:row-end-4",
     },
-    {
-        Icon: Shield,
+{
+    Icon: Shield,
         name: "Insurance",
-        description: "Protect your assets and grow your wealth with our financial planning services.",
-        href: "/services/insurance",
-        cta: "Learn more",
-        background: <img className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=800" alt="Insurance" />,
-        className: "lg:col-start-3 lg:col-end-3 lg:row-start-1 lg:row-end-2",
+            description: "Protect your assets and grow your wealth with our financial planning services.",
+                href: "/services/insurance",
+                    cta: "Learn more",
+                        background: <Image className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=800" alt="Insurance" width={800} height={600} />,
+                            className: "lg:col-start-3 lg:col-end-3 lg:row-start-1 lg:row-end-2",
     },
-    {
-        Icon: Presentation,
+{
+    Icon: Presentation,
         name: "Financial Planning",
-        description: "Tailored strategies to help you achieve your long-term financial goals and security.",
-        href: "/services/financial-planning",
-        cta: "Learn more",
-        background: <img className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&q=80&w=800" alt="Financial Planning" />,
-        className: "lg:col-start-3 lg:col-end-3 lg:row-start-2 lg:row-end-4",
+            description: "Tailored strategies to help you achieve your long-term financial goals and security.",
+                href: "/services/financial-planning",
+                    cta: "Learn more",
+                        background: <Image className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&q=80&w=800" alt="Financial Planning" width={800} height={600} />,
+                            className: "lg:col-start-3 lg:col-end-3 lg:row-start-2 lg:row-end-4",
     },
 ];
 
@@ -56,6 +89,7 @@ export default function Home() {
     return (
         <main>
             {/* Navbar Removed for Fullscreen Hero Look */}
+            <Schema data={jsonLd} />
 
             {/* Hero */}
             <HeroSection
