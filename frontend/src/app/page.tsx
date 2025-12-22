@@ -64,7 +64,7 @@ export default function Home() {
                 title={
                     <>
                         Professional <br />
-                        <span className="text-primary">Financial Management</span>
+                        <span className="text-primary">Accounting Management</span>
                     </>
                 }
                 subtitle="We provide peace of mind that small to medium-sized business clients bookkeeping, payroll, tax preparation, insurance and investment services are professionally managed."
@@ -99,9 +99,9 @@ export default function Home() {
             <section id="contact">
                 <Cta4
                     title="Free Consultation"
-                    description="Call or Email Today to schedule your session. We are ready to help you elevate your business with professional financial management."
+                    description="Call or Email Today to schedule your session. We are ready to help you elevate your business with professional accounting management."
                     buttonText="Contact Us Now"
-                    buttonUrl="mailto:INFO@CANMOREFINANCIAL.COM"
+                    buttonUrl="mailto:INFO@CANMOREACCOUNTING.COM"
                     items={[
                         "Expert Financial Guidance",
                         "Tax Compliance Assurance",

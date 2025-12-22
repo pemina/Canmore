@@ -39,7 +39,7 @@ export default function ContactPage() {
                                     </div>
                                     <div>
                                         <h3 className="font-bold text-gray-900 mb-1">Email</h3>
-                                        <a href="mailto:info@canmorefinancial.com" className="text-gray-600 hover:text-[#991b1b] transition-colors">info@canmorefinancial.com</a>
+                                        <a href="mailto:info@canmoreaccounting.com" className="text-gray-600 hover:text-[#991b1b] transition-colors">info@canmoreaccounting.com</a>
                                     </div>
                                 </div>
 

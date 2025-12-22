@@ -37,8 +37,8 @@ export function HoverFooter() {
     const contactInfo = [
         {
             icon: <Mail size={18} className="text-primary" />,
-            text: "INFO@CANMOREFINANCIAL.COM",
-            href: "mailto:INFO@CANMOREFINANCIAL.COM",
+            text: "INFO@CANMOREACCOUNTING.COM",
+            href: "mailto:INFO@CANMOREACCOUNTING.COM",
         },
         {
             icon: <Phone size={18} className="text-primary" />,
