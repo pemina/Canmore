@@ -67,7 +67,7 @@ export function HoverFooter() {
                         <div className="flex items-center space-x-2">
                             <img
                                 src="/canmore-logo.jpg"
-                                alt="CanMore Financial"
+                                alt="CanMore Accounting"
                                 className="h-12 w-auto object-contain"
                             />
                         </div>
@@ -144,7 +144,7 @@ export function HoverFooter() {
 
                     {/* Copyright */}
                     <p className="text-center md:text-left text-gray-500">
-                        &copy; {new Date().getFullYear()} CanMore Financial. All rights reserved.
+                        &copy; {new Date().getFullYear()} CanMore Accounting. All rights reserved.
                     </p>
                 </div>
             </div>

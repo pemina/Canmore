@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-    title: "CanMore Financial | Professional Bookkeeping & Tax Services",
+    title: "CanMore Accounting | Professional Bookkeeping & Tax Services",
     description: "Small to medium-sized business clients bookkeeping, payroll, tax preparation, insurance and investment services.",
 };
 

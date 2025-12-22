@@ -39,7 +39,7 @@ export function SiteHeader() {
                     <Link href="/" className="flex items-center gap-3 group">
                         <img
                             src="/canmore-logo.jpg"
-                            alt="CanMore Financial"
+                            alt="CanMore Accounting"
                             className="h-12 w-auto object-contain transition-transform group-hover:scale-105"
                         />
                     </Link>
