@@ -35,7 +35,7 @@ export function SiteHeader() {
             <div className="container mx-auto px-4 md:px-6">
                 <div className="flex items-center justify-between h-16">
                     {/* Logo Section */}
-                    {/* Logo Section */}
+
                     <Link href="/" className="flex items-center gap-3 group">
                         <img
                             src="/canmore-logo.jpg"
