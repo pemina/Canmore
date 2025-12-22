@@ -24,17 +24,22 @@ export const Cta4 = ({
     buttonText = "Get Started",
     buttonUrl = "https://shadcnblocks.com",
     items = defaultItems,
-}: Cta4Props) => {
+    backgroundImage,
+}: Cta4Props & { backgroundImage?: string }) => {
     return (
-        <section className="py-32 bg-white">
-            <div className="container mx-auto">
+        <section
+            className="py-32 bg-white bg-cover bg-center relative"
+            style={backgroundImage ? { backgroundImage: `url(${backgroundImage})` } : undefined}
+        >
+            {backgroundImage && <div className="absolute inset-0 bg-black/60 pointer-events-none"></div>}
+            <div className="container mx-auto relative z-10">
                 <div className="flex justify-center">
                     <div className="max-w-5xl w-full">
-                        <div className="flex flex-col items-start justify-between gap-8 rounded-lg bg-gray-50 border border-gray-100 px-6 py-10 md:flex-row lg:px-20 lg:py-16 shadow-sm hover:shadow-md transition-shadow">
+                        <div className="flex flex-col items-start justify-between gap-8 rounded-2xl bg-white/95 backdrop-blur-sm border border-gray-100 px-6 py-10 md:flex-row lg:px-20 lg:py-16 shadow-2xl">
                             <div className="md:w-1/2">
                                 <h4 className="mb-4 text-2xl font-bold md:text-3xl text-gray-900">{title}</h4>
                                 <p className="text-gray-600 leading-relaxed mb-8">{description}</p>
-                                <Button className="font-bold tracking-wide uppercase text-white" asChild>
+                                <Button className="font-bold tracking-wide uppercase text-white shadow-lg" asChild>
                                     <a href={buttonUrl}>
                                         {buttonText} <ArrowRight className="ml-2 size-4" />
                                     </a>

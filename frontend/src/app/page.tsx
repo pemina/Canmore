@@ -139,6 +139,7 @@ export default function Home() {
                         "Personalized Business Strategies",
                         "Peace of Mind for Your Business"
                     ]}
+                    backgroundImage="https://images.unsplash.com/photo-1517090251583-36c561b36952?q=80&w=2000&auto=format&fit=crop"
                 />
             </section>
 

@@ -5,6 +5,7 @@ export const guidesData = [
         category: "Business Startup",
         readTime: "10 min read",
         description: "A comprehensive checklist for registering your business, setting up HST, and payroll accounts in Ontario.",
+        coverImage: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&q=80&w=2000",
         content: `
             <h2>1. Register Your Business Name</h2>
             <p>If you are operating under a name other than your own legal name, you must register your business name with the Ontario government. This applies to sole proprietorships, partnerships, and corporations.</p>
@@ -35,6 +36,7 @@ export const guidesData = [
         category: "Taxation",
         readTime: "8 min read",
         description: "Everything you need to know about collecting, filing, and remitting Harmonized Sales Tax (HST).",
+        coverImage: "https://images.unsplash.com/photo-1586486855514-8c633cc6fd38?auto=format&fit=crop&q=80&w=2000",
         content: `
             <h2>When to Register</h2>
             <p>You must register for a GST/HST account if you are no longer considered a "small supplier." This generally means your total worldwide taxable supplies of goods and services exceed $30,000 in a single calendar quarter or over four consecutive quarters.</p>
@@ -54,6 +56,7 @@ export const guidesData = [
         category: "Payroll",
         readTime: "12 min read",
         description: "Guide to CPP, EI, and income tax deductions for employers in Canada.",
+        coverImage: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=2000",
         content: `
             <h2>Employer Responsibilities</h2>
             <p>As an employer, you must deduce the following from your employees' pay:</p>
@@ -77,6 +80,7 @@ export const guidesData = [
         category: "Business Structure",
         readTime: "15 min read",
         description: "Key differences, tax implications, and benefits of each business structure.",
+        coverImage: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=2000",
         content: `
             <h2>Sole Proprietorship</h2>
             <p><strong>Pros:</strong> Simplest and least expensive to set up. Detailed regulatory burden is low.</p>
@@ -96,6 +100,7 @@ export const guidesData = [
         category: "Tax Planning",
         readTime: "7 min read",
         description: "Strategies to minimize your corporate tax liability before the fiscal year ends.",
+        coverImage: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&q=80&w=2000",
         content: `
             <h2>Purchase Capital Assets</h2>
             <p>If you are planning to buy new equipment or computers, doing so before your fiscal year-end allows you to claim Capital Cost Allowance (depreciation) for that year (subject to the half-year rule).</p>
@@ -114,6 +119,7 @@ export const guidesData = [
         category: "Bookkeeping",
         readTime: "5 min read",
         description: "How to organize your receipts and financial documents for a stress-free audit.",
+        coverImage: "https://images.unsplash.com/photo-1554224154-260312cb07e1?auto=format&fit=crop&q=80&w=2000",
         content: `
             <h2>What to Keep</h2>
             <p>You must keep all records and supporting documents that are required to determine your tax obligations and entitlements. This includes:</p>
