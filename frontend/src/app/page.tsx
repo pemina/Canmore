@@ -107,7 +107,7 @@ export default function Home() {
                     text: "FREE CONSULTATION",
                     href: "#contact",
                 }}
-                backgroundImage="https://images.unsplash.com/photo-1477414348463-c0eb7f1359b6?auto=format&fit=crop&q=80&w=2000"
+                backgroundImage="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&q=80&w=2000"
                 className=""
             />
 
