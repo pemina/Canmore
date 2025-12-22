@@ -18,17 +18,17 @@ export function HoverFooter() {
         {
             title: "Company",
             links: [
-                { label: "About Us", href: "#" },
-                { label: "Our Services", href: "#services" },
-                { label: "Careers", href: "#" },
+                { label: "About Us", href: "/about" },
+                { label: "Our Services", href: "/services" },
+                { label: "Careers", href: "/careers" },
             ],
         },
         {
             title: "Resources",
             links: [
-                { label: "Financial Guides", href: "#" },
-                { label: "Tax Calendar", href: "#" },
-                { label: "Client Portal", href: "#" },
+                { label: "Financial Guides", href: "/resources/guides" },
+                { label: "Tax Calendar", href: "/resources/calendar" },
+                { label: "CRA Resources", href: "/resources/cra" },
             ],
         },
     ];
