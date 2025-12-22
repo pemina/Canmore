@@ -29,8 +29,7 @@ export default function ContactPage() {
                                     </div>
                                     <div>
                                         <h3 className="font-bold text-gray-900 mb-1">Phone</h3>
-                                        <a href="tel:4164770644" className="text-gray-600 hover:text-[#991b1b] transition-colors block">(416) 477-0644</a>
-                                        <p className="text-sm text-gray-500 mt-1">Calgary: (403) 404-2729</p>
+                                        <a href="tel:4164770644" className="text-gray-600 hover:text-[#991b1b] transition-colors block">416-477-0644</a>
                                     </div>
                                 </div>
 
@@ -49,23 +48,10 @@ export default function ContactPage() {
                                         <MapPin className="text-[#991b1b] h-6 w-6" />
                                     </div>
                                     <div>
-                                        <h3 className="font-bold text-gray-900 mb-1">Main Office (Markham)</h3>
+                                        <h3 className="font-bold text-gray-900 mb-1">Main Office</h3>
                                         <p className="text-gray-600 leading-relaxed">
-                                            UNIT#94 - 7393 Markham Road<br />
-                                            Markham, Ontario L3S 0B5, Canada
-                                        </p>
-                                    </div>
-                                </div>
-
-                                <div className="flex items-start gap-4">
-                                    <div className="bg-red-50 p-3 rounded-lg shrink-0">
-                                        <MapPin className="text-[#991b1b] h-6 w-6" />
-                                    </div>
-                                    <div>
-                                        <h3 className="font-bold text-gray-900 mb-1">Calgary Office</h3>
-                                        <p className="text-gray-600 leading-relaxed">
-                                            5 Richard Way SW<br />
-                                            Calgary, AB T3E 7M8
+                                            310 - 1585 Markham Road<br />
+                                            Scarborough Ontario M1B 2W1
                                         </p>
                                     </div>
                                 </div>
