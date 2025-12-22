@@ -1,0 +1,21 @@
+node.exe : Vercel CLI 
+50.1.2
+At line:1 char:1
++ & "C:\/node.exe" "C:
+\Users\Pemina\AppData\
+Roaming\npm/node_modul
+es/np ...
++ ~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
+~~~~~
+    + CategoryInfo    
+          : NotSpeci  
+  fied: (Vercel CLI   
+  50.1.2:String) [    
+], RemoteExceptio    n
+    + FullyQualifiedE 
+   rrorId : NativeCo  
+  mmandError
+ 
+pemina23-2582

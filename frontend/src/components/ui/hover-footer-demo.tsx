@@ -42,12 +42,12 @@ export function HoverFooter() {
         },
         {
             icon: <Phone size={18} className="text-primary" />,
-            text: "(437) 972-7930",
-            href: "tel:+14379727930",
+            text: "416-477-0644",
+            href: "tel:+14164770644",
         },
         {
             icon: <MapPin size={18} className="text-primary" />,
-            text: "Toronto, Ontario",
+            text: "310 - 1585 Markham Road, Scarborough Ontario M1B 2W1",
         },
     ];
 
@@ -65,10 +65,11 @@ export function HoverFooter() {
                     {/* Brand section */}
                     <div className="flex flex-col space-y-4">
                         <div className="flex items-center space-x-2">
-                            <span className="text-primary text-3xl font-extrabold">
-                                CF
-                            </span>
-                            <span className="text-gray-900 text-2xl font-bold">CanMore Financial</span>
+                            <img
+                                src="/canmore-logo.jpg"
+                                alt="CanMore Financial"
+                                className="h-12 w-auto object-contain"
+                            />
                         </div>
                         <p className="text-sm leading-relaxed text-gray-500">
                             Professional bookkeeping, payroll, tax preparation, insurance and investment services for your business growth.

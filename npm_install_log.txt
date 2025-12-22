@@ -1,0 +1,100 @@
+node.exe : npm error 
+code EPERM
+At line:1 char:1
++ & "C:\/node.exe" "C:
+\Users\Pemina\AppData\
+Roaming\npm/node_modul
+es/np ...
++ ~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
+~~~~~
+    + CategoryInfo    
+          : NotSpeci  
+  fied: (npm error    
+ code EPERM:String    
+) [], RemoteExcep    
+tion
+    + FullyQualifiedE 
+   rrorId : NativeCo  
+  mmandError
+ 
+npm error syscall 
+mkdir
+npm error path C:\
+npm error errno -4048
+npm error Error: 
+EPERM: operation not 
+permitted, mkdir 'C:\'
+npm error     at 
+async mkdir (node:inte
+rnal/fs/promises:861:1
+0)
+npm error     at 
+async Arborist.reify (
+C:\Users\Pemina\AppDat
+a\Roaming\npm\node_mod
+ules\npm\node_modules\
+@npmcli\arborist\lib\a
+rborist\reify.js:105:7
+)
+npm error     at 
+async Install.exec (C:
+\Users\Pemina\AppData\
+Roaming\npm\node_modul
+es\npm\lib\commands\in
+stall.js:150:5)
+npm error     at 
+async Npm.exec (C:\Use
+rs\Pemina\AppData\Roam
+ing\npm\node_modules\n
+pm\lib\npm.js:208:9)
+npm error     at 
+async module.exports (
+C:\Users\Pemina\AppDat
+a\Roaming\npm\node_mod
+ules\npm\lib\cli\entry
+.js:67:5) {
+npm error   errno: 
+-4048,
+npm error   code: 
+'EPERM',
+npm error   syscall: 
+'mkdir',
+npm error   path: 
+'C:\\'
+npm error }
+npm error
+npm error The 
+operation was 
+rejected by your 
+operating system.
+npm error It's 
+possible that the 
+file was already in 
+use (by a text editor 
+or antivirus),
+npm error or that you 
+lack permissions to 
+access it.
+npm error
+npm error If you 
+believe this might be 
+a permissions issue, 
+please double-check 
+the
+npm error permissions 
+of the file and its 
+containing 
+directories, or try 
+running
+npm error the command 
+again as 
+root/Administrator.
+npm error A complete 
+log of this run can 
+be found in: C:\Users\
+Pemina\AppData\Local\n
+pm-cache\_logs\2025-12
+-22T14_59_06_390Z-debu
+g-0.log

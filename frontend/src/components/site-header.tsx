@@ -35,18 +35,13 @@ export function SiteHeader() {
             <div className="container mx-auto px-4 md:px-6">
                 <div className="flex items-center justify-between h-16">
                     {/* Logo Section */}
+                    {/* Logo Section */}
                     <Link href="/" className="flex items-center gap-3 group">
-                        <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#991b1b] text-white font-bold text-sm shadow-md transition-transform group-hover:scale-105">
-                            CF
-                        </div>
-                        <div className="flex flex-col">
-                            <span className="text-lg font-bold text-gray-900 leading-none">
-                                CanMore Financial
-                            </span>
-                            <span className="text-[0.6rem] font-bold text-[#b91c1c] tracking-[0.15em] uppercase leading-tight mt-0.5">
-                                Elevate Your Business
-                            </span>
-                        </div>
+                        <img
+                            src="/canmore-logo.jpg"
+                            alt="CanMore Financial"
+                            className="h-12 w-auto object-contain transition-transform group-hover:scale-105"
+                        />
                     </Link>
 
                     {/* Desktop Navigation */}

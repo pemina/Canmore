@@ -75,8 +75,8 @@ export default function Home() {
                 backgroundImage="https://images.unsplash.com/photo-1477414348463-c0eb7f1359b6?auto=format&fit=crop&q=80&w=2000"
                 contactInfo={{
                     website: "canmorefinancial.com",
-                    phone: "(437) 972-7930",
-                    address: "Toronto, ON",
+                    phone: "416-477-0644",
+                    address: "310 - 1585 Markham Road, Scarborough Ontario M1B 2W1",
                 }}
                 className=""
             />
