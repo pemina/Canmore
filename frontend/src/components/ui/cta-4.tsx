@@ -28,7 +28,7 @@ export const Cta4 = ({
 }: Cta4Props & { backgroundImage?: string }) => {
     return (
         <section
-            className="py-32 bg-white bg-cover bg-center relative"
+            className="py-32 bg-gray-900 bg-cover bg-center relative"
             style={backgroundImage ? { backgroundImage: `url(${backgroundImage})` } : undefined}
         >
             {backgroundImage && <div className="absolute inset-0 bg-black/60 pointer-events-none"></div>}
