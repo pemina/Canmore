@@ -82,7 +82,7 @@ export function SiteHeader() {
                                 {link.name}
                             </Link>
                         ))}
-                        <Button asChild className="bg-[#991b1b] w-full mt-2">
+                        <Button asChild className="bg-[#991b1b] text-white w-full mt-2">
                             <Link href="/contact" onClick={() => setIsMobileMenuOpen(false)}>Free Consultation</Link>
                         </Button>
                     </div>
