@@ -6,15 +6,6 @@ import { motion } from 'framer-motion';
 import { Globe, Phone, MapPin } from 'lucide-react';
 
 // Icon component for contact details
-const InfoIcon = ({ type }: { type: 'website' | 'phone' | 'address' }) => {
-    const icons = {
-        website: <Globe className="h-5 w-5 text-primary" />,
-        phone: <Phone className="h-5 w-5 text-primary" />,
-        address: <MapPin className="h-5 w-5 text-primary" />,
-    };
-    return <div className="mr-2 flex-shrink-0">{icons[type]}</div>;
-};
-
 // Prop types for the HeroSection component
 interface HeroSectionProps extends Omit<React.HTMLAttributes<HTMLDivElement>, "title"> {
     logo?: {
@@ -30,15 +21,10 @@ interface HeroSectionProps extends Omit<React.HTMLAttributes<HTMLDivElement>, "t
         href: string;
     };
     backgroundImage: string;
-    contactInfo: {
-        website: string;
-        phone: string;
-        address: string;
-    };
 }
 
 const HeroSection = React.forwardRef<HTMLDivElement, HeroSectionProps>(
-    ({ className, logo, slogan, title, subtitle, callToAction, backgroundImage, contactInfo, ...props }, ref) => {
+    ({ className, logo, slogan, title, subtitle, callToAction, backgroundImage, ...props }, ref) => {
 
         // Animation variants for the container to orchestrate children animations
         const containerVariants = {
@@ -115,24 +101,6 @@ const HeroSection = React.forwardRef<HTMLDivElement, HeroSectionProps>(
                             </motion.a>
                         </motion.main>
                     </div>
-
-                    {/* Bottom Section: Contact Info */}
-                    <motion.div className="mt-16 w-full" variants={itemVariants}>
-                        <div className="grid grid-cols-1 gap-y-4 gap-x-8 text-sm sm:grid-cols-3">
-                            <div className="flex items-center gap-3">
-                                <InfoIcon type="website" />
-                                <span className="font-semibold text-gray-700 hover:text-primary transition-colors">{contactInfo.website}</span>
-                            </div>
-                            <div className="flex items-center gap-3">
-                                <InfoIcon type="phone" />
-                                <span className="font-semibold text-gray-700 hover:text-primary transition-colors">{contactInfo.phone}</span>
-                            </div>
-                            <div className="flex items-center gap-3">
-                                <InfoIcon type="address" />
-                                <span className="font-semibold text-gray-700 hover:text-primary transition-colors">{contactInfo.address}</span>
-                            </div>
-                        </div>
-                    </motion.div>
                 </div>
 
                 {/* Right Side: Image with Clip Path Animation */}

@@ -98,8 +98,8 @@ export default function Home() {
                 slogan="ELEVATE YOUR BUSINESS"
                 title={
                     <>
-                        Professional <br />
-                        <span className="text-primary">Accounting Management</span>
+                        Expert Accounting & <br />
+                        <span className="text-primary">Tax Services in Scarborough</span>
                     </>
                 }
                 subtitle="We provide peace of mind that small to medium-sized business clients bookkeeping, payroll, tax preparation, insurance and investment services are professionally managed."
@@ -108,11 +108,6 @@ export default function Home() {
                     href: "#contact",
                 }}
                 backgroundImage="https://images.unsplash.com/photo-1477414348463-c0eb7f1359b6?auto=format&fit=crop&q=80&w=2000"
-                contactInfo={{
-                    website: "canmoreaccounting.com",
-                    phone: "416-477-0644",
-                    address: "310 - 1585 Markham Road, Scarborough Ontario M1B 2W1",
-                }}
                 className=""
             />
 
