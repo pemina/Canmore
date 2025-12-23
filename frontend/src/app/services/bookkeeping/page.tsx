@@ -1,4 +1,5 @@
 import { HoverFooter } from "@/components/ui/hover-footer-demo";
+import { Cta4 } from "@/components/ui/cta-4";
 import { FileText, CheckCircle2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
@@ -58,6 +59,23 @@ export default function BookkeepingPage() {
                         </div>
                     </div>
                 </div>
+            </section>
+
+            {/* CTA Section */}
+            <section>
+                <Cta4
+                    title="Stop Stressing About Your Books"
+                    description="Let us handle the numbers so you can focus on running your business. Accurate, timely, and compliant bookkeeping."
+                    buttonText="Get Your Books in Order"
+                    buttonUrl="/contact"
+                    items={[
+                        "Clean Financial Records",
+                        "Tax-Ready Books",
+                        "Monthly Reporting",
+                        "Peace of Mind"
+                    ]}
+                    backgroundImage="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&q=80&w=2000"
+                />
             </section>
 
             <HoverFooter />

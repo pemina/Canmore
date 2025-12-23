@@ -1,4 +1,5 @@
 import { HoverFooter } from "@/components/ui/hover-footer-demo";
+import { Cta4 } from "@/components/ui/cta-4";
 import { Presentation, CheckCircle2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
@@ -25,7 +26,7 @@ export default function FinancialPlanningPage() {
                     <div className="grid md:grid-cols-2 gap-12 items-center">
                         <div>
                             <img
-                                src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&q=80&w=800"
+                                src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=800"
                                 alt="Financial Planning"
                                 className="rounded-2xl shadow-lg w-full h-auto object-cover"
                             />
@@ -58,6 +59,23 @@ export default function FinancialPlanningPage() {
                         </div>
                     </div>
                 </div>
+            </section>
+
+            {/* CTA Section */}
+            <section>
+                <Cta4
+                    title="Build Your Financial Future"
+                    description="Take control of your financial destiny with expert planning and strategic guidance."
+                    buttonText="Create Your Plan"
+                    buttonUrl="/contact"
+                    items={[
+                        "Wealth Growth",
+                        "Retirement Security",
+                        "Education Funding",
+                        "Legacy Building"
+                    ]}
+                    backgroundImage="https://images.unsplash.com/photo-1579532470644-d8bc2d987625?auto=format&fit=crop&q=80&w=2000"
+                />
             </section>
 
             <HoverFooter />

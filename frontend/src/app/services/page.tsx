@@ -1,4 +1,5 @@
 import { HoverFooter } from "@/components/ui/hover-footer-demo";
+import { Cta4 } from "@/components/ui/cta-4";
 import { FileText, Calculator, TrendingUp, Shield, Briefcase, DollarSign } from "lucide-react";
 import Link from "next/link";
 
@@ -94,6 +95,23 @@ export default function ServicesPage() {
                     </div>
                 ))}
             </div>
+
+            {/* CTA Section */}
+            <section className="bg-white">
+                <Cta4
+                    title="Ready to Elevate Your Business?"
+                    description="Contact us today to discuss how our comprehensive financial services can help you achieve your goals."
+                    buttonText="Get Started"
+                    buttonUrl="/contact"
+                    items={[
+                        "Professional Accounting",
+                        "Strategic Planning",
+                        "Risk Management",
+                        "Growth Focused"
+                    ]}
+                    backgroundImage="https://images.unsplash.com/photo-1486325212027-8081e485255e?q=80&w=2000&auto=format&fit=crop"
+                />
+            </section>
 
             <HoverFooter />
         </main>

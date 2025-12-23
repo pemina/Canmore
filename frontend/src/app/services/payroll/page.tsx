@@ -1,4 +1,5 @@
 import { HoverFooter } from "@/components/ui/hover-footer-demo";
+import { Cta4 } from "@/components/ui/cta-4";
 import { TrendingUp, CheckCircle2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
@@ -58,6 +59,23 @@ export default function PayrollPage() {
                         </div>
                     </div>
                 </div>
+            </section>
+
+            {/* CTA Section */}
+            <section>
+                <Cta4
+                    title="Simplifying Payroll for You"
+                    description="Ensure your team is paid on time, every time, while we handle the compliance and calculations."
+                    buttonText="Start Payroll Services"
+                    buttonUrl="/contact"
+                    items={[
+                        "Timely Payments",
+                        "Compliance Guarantee",
+                        "Automated Systems",
+                        "Employee Satisfaction"
+                    ]}
+                    backgroundImage="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=2000"
+                />
             </section>
 
             <HoverFooter />

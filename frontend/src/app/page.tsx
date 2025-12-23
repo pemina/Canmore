@@ -81,7 +81,7 @@ const features = [
         description: "Tailored strategies to help you achieve your long-term financial goals and security.",
         href: "/services/financial-planning",
         cta: "Learn more",
-        background: <Image className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&q=80&w=800" alt="Financial Planning" width={800} height={600} />,
+        background: <Image className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800" alt="Financial Planning" width={800} height={600} />,
         className: "lg:col-start-3 lg:col-end-3 lg:row-start-2 lg:row-end-4",
     },
 ];
@@ -107,7 +107,7 @@ export default function Home() {
                     text: "FREE CONSULTATION",
                     href: "#contact",
                 }}
-                backgroundImage="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&q=80&w=2000"
+                backgroundImage="/canmore-hero.png"
                 className=""
             />
 

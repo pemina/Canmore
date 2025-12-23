@@ -34,20 +34,21 @@ export function HoverFooter() {
     ];
 
     // Contact info data
+    // Contact info data
     const contactInfo = [
         {
-            icon: <Mail size={18} className="text-primary" />,
-            text: "INFO@CANMOREACCOUNTING.COM",
-            href: "mailto:INFO@CANMOREACCOUNTING.COM",
+            icon: <Mail className="h-5 w-5 text-gray-600 shrink-0" />,
+            text: "info@canmoreaccounting.com",
+            href: "mailto:info@canmoreaccounting.com",
         },
         {
-            icon: <Phone size={18} className="text-primary" />,
-            text: "416-477-0644",
+            icon: <Phone className="h-5 w-5 text-gray-600 shrink-0" />,
+            text: "(416) 477-0644",
             href: "tel:+14164770644",
         },
         {
-            icon: <MapPin size={18} className="text-primary" />,
-            text: "310 - 1585 Markham Road, Scarborough Ontario M1B 2W1",
+            icon: <MapPin className="h-5 w-5 text-gray-600 shrink-0" />,
+            text: "310 - 1585 Markham Road, Scarborough, ON M1B 2W1",
         },
     ];
 
@@ -104,7 +105,7 @@ export function HoverFooter() {
                         </h4>
                         <ul className="space-y-4">
                             {contactInfo.map((item, i) => (
-                                <li key={i} className="flex items-center space-x-3 text-gray-600">
+                                <li key={i} className="flex items-start space-x-3 text-gray-600">
                                     {item.icon}
                                     {item.href ? (
                                         <a
@@ -129,18 +130,8 @@ export function HoverFooter() {
                 {/* Footer bottom */}
                 <div className="flex flex-col md:flex-row justify-between items-center text-sm space-y-4 md:space-y-0">
                     {/* Social icons */}
-                    <div className="flex space-x-6 text-gray-400">
-                        {socialLinks.map(({ icon, label, href }) => (
-                            <a
-                                key={label}
-                                href={href}
-                                aria-label={label}
-                                className="hover:text-primary transition-colors"
-                            >
-                                {icon}
-                            </a>
-                        ))}
-                    </div>
+                    {/* Social icons removed per user request */}
+                    <div></div>
 
                     {/* Copyright */}
                     <p className="text-center md:text-left text-gray-500">

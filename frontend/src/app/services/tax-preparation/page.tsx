@@ -1,4 +1,5 @@
 import { HoverFooter } from "@/components/ui/hover-footer-demo";
+import { Cta4 } from "@/components/ui/cta-4";
 import { Calculator, CheckCircle2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
@@ -25,7 +26,7 @@ export default function TaxPreparationPage() {
                     <div className="grid md:grid-cols-2 gap-12 items-center">
                         <div>
                             <img
-                                src="https://images.unsplash.com/photo-1554224154-260327c00c4b?auto=format&fit=crop&q=80&w=800"
+                                src="/tax-prep-feature.png"
                                 alt="Tax Preparation"
                                 className="rounded-2xl shadow-lg w-full h-auto object-cover"
                             />
@@ -58,6 +59,23 @@ export default function TaxPreparationPage() {
                         </div>
                     </div>
                 </div>
+            </section>
+
+            {/* CTA Section */}
+            <section>
+                <Cta4
+                    title="Maximize Your Returns, Minimize Stress"
+                    description="Expert tax preparation services to ensure you pay only what you owe and stay compliant with the CRA."
+                    buttonText="Schedule Tax Consultation"
+                    buttonUrl="/contact"
+                    items={[
+                        "CRA Audit Support",
+                        "Corporate & Personal Tax",
+                        "Strategic Tax Planning",
+                        "Maximum Refunds"
+                    ]}
+                    backgroundImage="https://images.unsplash.com/photo-1586486855514-8c633cc6fd38?auto=format&fit=crop&q=80&w=2000"
+                />
             </section>
 
             <HoverFooter />

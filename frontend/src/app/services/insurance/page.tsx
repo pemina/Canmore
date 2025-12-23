@@ -1,4 +1,5 @@
 import { HoverFooter } from "@/components/ui/hover-footer-demo";
+import { Cta4 } from "@/components/ui/cta-4";
 import { Shield, CheckCircle2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
@@ -58,6 +59,23 @@ export default function InsurancePage() {
                         </div>
                     </div>
                 </div>
+            </section>
+
+            {/* CTA Section */}
+            <section>
+                <Cta4
+                    title="Protect What Matters Most"
+                    description="Don't leave your future to chance. Let us help you find the right insurance coverage for your peace of mind."
+                    buttonText="Get Protected Now"
+                    buttonUrl="/contact"
+                    items={[
+                        "Family Protection",
+                        "Asset Security",
+                        "Business Safeguards",
+                        "Future Proofing"
+                    ]}
+                    backgroundImage="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=2000"
+                />
             </section>
 
             <HoverFooter />

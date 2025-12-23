@@ -1,5 +1,6 @@
 import { SiteHeader } from "@/components/site-header";
 import { HoverFooter } from "@/components/ui/hover-footer-demo";
+import { Cta4 } from "@/components/ui/cta-4";
 import { CheckCircle2 } from "lucide-react";
 
 export default function AboutPage() {
@@ -23,7 +24,7 @@ export default function AboutPage() {
                     <div className="flex flex-col md:flex-row gap-12 items-center">
                         <div className="md:w-1/2">
                             <img
-                                src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&q=80&w=800"
+                                src="/about-team.png"
                                 alt="Meeting"
                                 className="rounded-2xl shadow-lg w-full h-auto object-cover"
                             />
@@ -72,6 +73,23 @@ export default function AboutPage() {
                         </div>
                     </div>
                 </div>
+            </section>
+
+            {/* CTA Section */}
+            <section>
+                <Cta4
+                    title="Partner With Us"
+                    description="Experience the difference of working with a team that truly cares about your financial success."
+                    buttonText="Get a Free Quote"
+                    buttonUrl="/contact"
+                    items={[
+                        "Personalized Attention",
+                        "Expert Knowledge",
+                        "Timely Service",
+                        "Long-term Partnership"
+                    ]}
+                    backgroundImage="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&q=80&w=2000"
+                />
             </section>
 
             <HoverFooter />
